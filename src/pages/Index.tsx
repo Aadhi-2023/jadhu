@@ -17,7 +17,7 @@ const featuredBreeds = [
 ];
 
 const testimonials = [
-  { name: "Sarah M.", text: "PawsElite matched us with the perfect puppy. Our Golden Retriever has been an absolute joy!", rating: 5 },
+  { name: "Sarah M.", text: "Jadhu matched us with the perfect puppy. Our Golden Retriever has been an absolute joy!", rating: 5 },
   { name: "James T.", text: "Professional, caring, and genuinely passionate about their breeds. Couldn't ask for a better experience.", rating: 5 },
   { name: "Emily R.", text: "From the first visit to bringing our puppy home, every step was handled with such care. Highly recommend!", rating: 5 },
 ];
@@ -56,7 +56,7 @@ const Index = () => (
     {/* About */}
     <section className="mx-auto max-w-7xl px-6 py-20">
       <div className="mb-12 text-center">
-        <h2 className="mb-3 text-3xl font-bold md:text-4xl">Why Choose PawsElite?</h2>
+        <h2 className="mb-3 text-3xl font-bold md:text-4xl">Why Choose Jadhu?</h2>
         <p className="text-muted-foreground">Dedicated to excellence in every wag and purr.</p>
       </div>
       <div className="grid gap-6 sm:grid-cols-3">
