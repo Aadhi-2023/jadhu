@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PawPrint, Facebook, Instagram, Twitter } from "lucide-react";
+import { PawPrint, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => (
   <footer className="border-t bg-card">
@@ -8,10 +8,10 @@ const Footer = () => (
       <div>
         <Link to="/" className="mb-3 flex items-center gap-2 text-lg font-bold">
           <PawPrint className="h-6 w-6 text-primary" />
-          <span className="font-serif">PawsElite</span>
+          <span className="font-serif">Jadhu</span>
         </Link>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Premium pet breeding with love, care and over 15 years of experience bringing joy to families.
+          Premium pet breeding with love, care and dedication to bringing joy to families.
         </p>
       </div>
 
@@ -39,13 +39,14 @@ const Footer = () => (
         <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">Follow Us</h4>
         <div className="flex gap-3">
           {[
-            { icon: Facebook, label: "Facebook" },
-            { icon: Instagram, label: "Instagram" },
-            { icon: Twitter, label: "Twitter" },
-          ].map(({ icon: Icon, label }) => (
+            { icon: Facebook, label: "Facebook", url: "https://facebook.com/jadhu2026" },
+            { icon: Instagram, label: "Instagram", url: "https://instagram.com/jadhu2026" },
+          ].map(({ icon: Icon, label, url }) => (
             <a
               key={label}
-              href="#"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={label}
               className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-foreground/70 transition-colors hover:bg-primary hover:text-primary-foreground"
             >
@@ -57,7 +58,7 @@ const Footer = () => (
     </div>
 
     <div className="border-t py-4 text-center text-xs text-muted-foreground">
-      © {new Date().getFullYear()} PawsElite. All rights reserved.
+      © {new Date().getFullYear()} Jadhu. All rights reserved.
     </div>
   </footer>
 );

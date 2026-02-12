@@ -33,9 +33,9 @@ const Contact = () => {
         {/* Contact Info */}
         <motion.div className="space-y-6" initial="hidden" animate="visible" variants={fadeUp}>
           {[
-            { icon: Mail, label: "Email", value: "hello@pawselite.com" },
-            { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-            { icon: MapPin, label: "Address", value: "123 Breeder Lane, Petsville, CA 90210" },
+            { icon: Mail, label: "Email", value: "jadhu.2026@gmail.com" },
+            { icon: Phone, label: "Phone", value: "+91 9787777911" },
+            { icon: MapPin, label: "Address", value: "Coimbatore, India" },
             { icon: Clock, label: "Business Hours", value: "Mon – Sat: 9am – 6pm" },
           ].map(({ icon: Icon, label, value }) => (
             <Card key={label} className="border-none bg-secondary/50">
